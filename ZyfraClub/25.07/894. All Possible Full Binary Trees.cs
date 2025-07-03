@@ -27,8 +27,8 @@ public sealed class AllPossibleFullBinaryTrees
         {
             if (n % 2 == 0)
                 return new List<TreeNode>();
-
-            var dp = new List<TreeNode?>[n + 1];
+    
+            var dp = new List<TreeNode?>[n + 3];
             dp[1] = [SingleNode];
             dp[3] = [SimpleNode];
 
@@ -56,7 +56,7 @@ public sealed class AllPossibleFullBinaryTrees
     {
         // Arrange
         var sut = new Solution();
-        var n = 7;
+        var n = 1;
 
         // Act
         var trees = sut.AllPossibleFBT(n);
