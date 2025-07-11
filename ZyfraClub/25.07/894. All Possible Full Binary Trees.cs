@@ -56,7 +56,7 @@ public sealed class AllPossibleFullBinaryTrees
     {
         // Arrange
         var sut = new Solution();
-        var n = 1;
+        var n = 7;
 
         // Act
         var trees = sut.AllPossibleFBT(n);
