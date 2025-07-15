@@ -1,19 +1,10 @@
-﻿namespace TopInterview150;
+﻿using TopInterview150.Definitions;
+using TopInterview150.Extensions;
+
+namespace TopInterview150;
 
 public sealed class RemoveNthNodeFromEndOfList
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public class Solution
     {
         public ListNode RemoveNthFromEnd(ListNode head, int n)
@@ -42,39 +33,13 @@ public sealed class RemoveNthNodeFromEndOfList
     public void Test(int[] values, int n, int[] expected)
     {
         // Arrange
-        var head = CreateLinkedList(values);
+        var head = values.ToLinkedList();
         var sut = new Solution();
 
         // Act
-        var result = sut.RemoveNthFromEnd(head, n);
+        var result = sut.RemoveNthFromEnd(head!, n);
 
         // Assert
-        Assert.Equal(expected, ToArray(result));
-    }
-    
-    private static ListNode CreateLinkedList(int[] values)
-    {
-        if (values.Length == 0) return null;
-
-        var head = new ListNode(values[0]);
-        var current = head;
-        for (var i = 1; i < values.Length; i++)
-        {
-            current.next = new ListNode(values[i]);
-            current = current.next;
-        }
-
-        return head;
-    }
-    
-    private static int[] ToArray(ListNode head)
-    {
-        var result = new List<int>();
-        while (head != null)
-        {
-            result.Add(head.val);
-            head = head.next;
-        }
-        return result.ToArray();
+        Assert.Equal(expected, result.ToArray());
     }
 }

@@ -1,19 +1,10 @@
-﻿namespace TopInterview150;
+﻿using TopInterview150.Definitions;
+using TopInterview150.Extensions;
+
+namespace TopInterview150;
 
 public sealed class MergeTwoSortedLists
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode? next;
-
-        public ListNode(int val = 0, ListNode? next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public class Solution
     {
         public ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
@@ -62,41 +53,13 @@ public sealed class MergeTwoSortedLists
     {
         // Arrange
         var sut = new Solution();
-        var l1 = CreateLinkedList(list1);
-        var l2 = CreateLinkedList(list2);
+        var l1 = list1.ToLinkedList();
+        var l2 = list2.ToLinkedList();
         
         // Act
         var merged = sut.MergeTwoLists(l1, l2);
         
         // Assert
-        Assert.Equal(expected, ToArray(merged));
-    }
-
-    private int[] ToArray(ListNode? listNode)
-    {
-        var result = new List<int>();
-        while (listNode != null)
-        {
-            result.Add(listNode.val);
-            listNode = listNode.next;
-        }
-        return result.ToArray();
-    }
-
-    private ListNode? CreateLinkedList(int[] list1)
-    {
-        if (list1.Length == 0)
-            return null;
-
-        var head = new ListNode(list1[0]);
-        var current = head;
-
-        for (var i = 1; i < list1.Length; i++)
-        {
-            current.next = new ListNode(list1[i]);
-            current = current.next;
-        }
-
-        return head;
+        Assert.Equal(expected, merged.ToArray());
     }
 }

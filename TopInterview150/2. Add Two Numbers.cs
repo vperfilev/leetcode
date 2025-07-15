@@ -1,19 +1,10 @@
-﻿namespace TopInterview150;
+﻿using TopInterview150.Definitions;
+using TopInterview150.Extensions;
+
+namespace TopInterview150;
 
 public sealed class AddTwoNumbers
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode? next;
-
-        public ListNode(int val = 0, ListNode? next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public class Solution
     {
         public ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2)
@@ -53,32 +44,13 @@ public sealed class AddTwoNumbers
     {
         // Arrange
         var sut = new Solution();
-        var list1 = CreateLinkedList(l1);
-        var list2 = CreateLinkedList(l2);
+        var list1 = l1.ToLinkedList();
+        var list2 = l2.ToLinkedList();
 
         // Act
         var result = sut.AddTwoNumbers(list1, list2);
 
         // Assert
-        Assert.Equal(expected, ConvertToArray(result));
-    }
-
-    private int[] ConvertToArray(ListNode nodes)
-    {
-        var result = new List<int>();
-        while (nodes != null)
-        {
-            result.Add(nodes.val);
-            nodes = nodes.next;
-        }
-        return result.ToArray();
-    }
-
-    private ListNode? CreateLinkedList(int[] values)
-    {
-        var nodes = values.Select(x => new ListNode(x)).ToArray();
-        for (var i = 0; i < values.Length - 1; i++)
-            nodes[i].next = nodes[i + 1];
-        return nodes.FirstOrDefault();
+        Assert.Equal(expected, result.ToArray());
     }
 }

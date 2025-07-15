@@ -1,4 +1,6 @@
-﻿namespace TopInterview150;
+﻿using TopInterview150.Definitions;
+
+namespace TopInterview150;
 
 public sealed class LinkedListCycle
 {
@@ -19,18 +21,6 @@ public sealed class LinkedListCycle
             }
 
             return false;
-        }
-    }
-
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x)
-        {
-            val = x;
-            next = null;
         }
     }
 
