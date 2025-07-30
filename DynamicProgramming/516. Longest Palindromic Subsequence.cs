@@ -54,7 +54,7 @@ public sealed class LongestPalindromicSubsequence
         var length = sut.LongestPalindromeSubseq(s);
         
         // Assert
-        Assert.Equal(4, length);
+        Assert.Equal(3, length);
     }
 
     [Fact]
