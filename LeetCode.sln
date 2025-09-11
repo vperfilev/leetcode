@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "Dynam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZyfraClub", "ZyfraClub\ZyfraClub.csproj", "{21B74FF8-8537-4D9D-A645-B3DC194E5213}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topics", "Topics\Topics.csproj", "{DA899A61-5E40-45ED-AAB2-6D8261526CF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{21B74FF8-8537-4D9D-A645-B3DC194E5213}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21B74FF8-8537-4D9D-A645-B3DC194E5213}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21B74FF8-8537-4D9D-A645-B3DC194E5213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
