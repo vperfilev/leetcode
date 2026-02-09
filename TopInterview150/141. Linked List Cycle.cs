@@ -1,4 +1,4 @@
-﻿using TopInterview150.Definitions;
+﻿using Leetcode.Common.Definitions;
 
 namespace TopInterview150;
 

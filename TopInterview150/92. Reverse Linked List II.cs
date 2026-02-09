@@ -1,5 +1,5 @@
-﻿using TopInterview150.Definitions;
-using TopInterview150.Extensions;
+﻿using Leetcode.Common.Definitions;
+using Leetcode.Common.Extensions;
 
 namespace TopInterview150;
 

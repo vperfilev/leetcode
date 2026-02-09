@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZyfraClub", "ZyfraClub\Zyfr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topics", "Topics\Topics.csproj", "{DA899A61-5E40-45ED-AAB2-6D8261526CF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daily", "Daily\Daily.csproj", "{CE11102C-B60A-4964-BE90-1B474EC466B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode.Common", "Leetcode.Common\Leetcode.Common.csproj", "{D76471AF-AFA8-4FCE-8788-D72C622CB900}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA899A61-5E40-45ED-AAB2-6D8261526CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE11102C-B60A-4964-BE90-1B474EC466B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE11102C-B60A-4964-BE90-1B474EC466B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE11102C-B60A-4964-BE90-1B474EC466B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE11102C-B60A-4964-BE90-1B474EC466B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D76471AF-AFA8-4FCE-8788-D72C622CB900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76471AF-AFA8-4FCE-8788-D72C622CB900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76471AF-AFA8-4FCE-8788-D72C622CB900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76471AF-AFA8-4FCE-8788-D72C622CB900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

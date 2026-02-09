@@ -1,4 +1,4 @@
-namespace TopInterview150.Definitions;
+namespace Leetcode.Common.Definitions;
 
 public class ListNode
 {
